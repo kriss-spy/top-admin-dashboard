@@ -7,6 +7,241 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script src="main.js"></script>
+    <div id="sidebar">
+      <div id="logo">
+        <i data-lucide="layout-dashboard"></i>
+        <span>Dashboard</span>
+      </div>
+
+      <div class="optionGroup">
+        <div class="sideMenuOption" id="home">
+          <i data-lucide="home"></i><span>Home</span>
+        </div>
+        <div class="sideMenuOption" id="profile">
+          <i data-lucide="id-card"></i>
+          <span>Profile</span>
+        </div>
+        <div class="sideMenuOption" id="messages">
+          <i data-lucide="message-square"></i>
+          <span>Messages</span>
+        </div>
+        <div class="sideMenuOption" id="history">
+          <i data-lucide="history"></i>
+          <span>History</span>
+        </div>
+        <div class="sideMenuOption" id="tasks">
+          <i data-lucide="layout-list"></i>
+          <span>Tasks</span>
+        </div>
+        <div class="sideMenuOption" id="communities">
+          <i data-lucide="users"></i>
+          <span>Communities</span>
+        </div>
+      </div>
+
+      <div class="optionGroup">
+        <div class="sideMenuOption" id="Settings">
+          <i data-lucide="settings"></i>
+          <span>Settings</span>
+        </div>
+        <div class="sideMenuOption" id="support">
+          <i data-lucide="circle-question-mark"></i>
+          <span>Support</span>
+        </div>
+        <div class="sideMenuOption" id="privary">
+          <i data-lucide="globe-lock"></i>
+          <span>Privacy</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="topbar">
+      <div id="header">
+        <div id="searchBar">
+          <button id="searchButton"><i data-lucide="search"></i></button
+          ><input type="text" id="searchInput" />
+        </div>
+        <button id="notificationButton">
+          <i data-lucide="bell-ring"></i>
+        </button>
+        <div id="userAccount">
+          <img
+            src="./hust-tan.png"
+            alt=""
+            id="userProfilePicture"
+            class="profilePicture"
+          />
+          <div id="username">Morgan Oakley</div>
+        </div>
+      </div>
+      <div id="topMenu">
+        <div id="welcomeSection">
+          <img src="./hust-tan.png" alt="" class="bigProfilePicture" />
+          <div id="welcomeMsg">
+            <span id="welcomeMsgStart">Hi there,</span> Morgan Oakley (@morgan)
+          </div>
+        </div>
+        <div id="topMenuOptions">
+          <button id="new">New</button>
+          <button id="upload">Upload</button>
+          <button id="share">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="projects">
+        <div class="sectionTitle">Your Projects</div>
+        <div id="projectCards">
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="cardTitle">Super Cool Project</div>
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              perspiciatis cumque, tempora, sint cupiditate vel itaque aperiam
+              natus iste explicabo facere quidem perferendis voluptate molestias
+              illo fugit iure quia cum?
+            </div>
+            <div class="cardMenu">
+              <button id="starButton"><i data-lucide="star"></i></button>
+              <button id="watchButton"><i data-lucide="eye"></i></button>
+              <button id="shareButton"><i data-lucide="share-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="announcements">
+        <div class="sectionTitle">Announcements</div>
+        <div id="announcementList">
+          <div class="announcement">
+            <div class="announcementTitle">Site Maintenance</div>
+            <div class="announcementText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ducimus ipsum possimus similique quasi labore numquam voluptate
+              aliquam.
+            </div>
+          </div>
+          <div class="announcement">
+            <div class="announcementTitle">Site Maintenance</div>
+            <div class="announcementText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ducimus ipsum possimus similique quasi labore numquam voluptate
+              aliquam.
+            </div>
+          </div>
+          <div class="announcement">
+            <div class="announcementTitle">Site Maintenance</div>
+            <div class="announcementText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              ducimus ipsum possimus similique quasi labore numquam voluptate
+              aliquam.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="trending">
+        <div class="sectionTitle">Trending</div>
+        <div id="trendingList">
+          <div class="trendingAccount">
+            <img class="profilePicture" src="./hust-tan.png" />
+            <div class="accountName">tegan</div>
+            <div class="appName">World Peace Builder</div>
+          </div>
+          <div class="trendingAccount">
+            <img class="profilePicture" src="./hust-tan.png" />
+            <div class="accountName">tegan</div>
+            <div class="appName">World Peace Builder</div>
+          </div>
+          <div class="trendingAccount">
+            <img class="profilePicture" src="./hust-tan.png" />
+            <div class="accountName">tegan</div>
+            <div class="appName">World Peace Builder</div>
+          </div>
+          <div class="trendingAccount">
+            <img class="profilePicture" src="./hust-tan.png" />
+            <div class="accountName">tegan</div>
+            <div class="appName">World Peace Builder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      // Initialize Lucide icons after DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
   </body>
 </html>

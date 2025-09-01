@@ -1,0 +1,317 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* my new rules */
+:root {
+    --sidebarWidth: 250px;
+    --topBarHeight: 150px;
+    --themeColor: #1992D4;
+    --secondColor: #F2D080;
+    --backgroundColor: #E2E8F0;
+    --whiteColor: #FFFFFF;
+    --projectCardMinWidth: 200px;
+    --projectCardMaxWidth: 400px;
+    --projectCardMinHeight: 200px;
+    --projectCardMaxHeight: 300px;
+    --secondTextColor: #696969;
+
+}
+
+* {
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: var(--sidebarWidth) 1fr;
+    grid-template-rows: var(--topBarHeight) 1fr;
+}
+
+
+#sidebar {
+    background-color: var(--themeColor);
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 16px;
+    gap: 30px;
+}
+
+#logo {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    gap: 12px;
+}
+
+.optionGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideMenuOption {
+    display: flex;
+    font-size: large;
+    gap: 20px;
+}
+
+#topbar {
+    background-color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    padding: 20px;
+}
+
+/* #notificationButton,
+#searchButton {
+    all: unset;
+} */
+
+button {
+    all: unset;
+}
+
+.sectionTitle,
+.cardTitle,
+.announcementTitle {
+    font-weight: bold;
+    padding: 10px;
+}
+
+#header {
+    display: flex;
+}
+
+#searchBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#searchInput {
+    background-color: var(--backgroundColor);
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+    padding-left: 5px;
+    margin-right: 200px;
+}
+
+#userAccount {
+    display: flex;
+    align-items: center;
+}
+
+#welcomeSection {
+    display: flex;
+    align-items: center;
+}
+
+#welcomeMsg {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#welcomeMsgStart {
+    font-size: small;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.bigProfilePicture {
+    border-radius: 50%;
+    width: 80px;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topMenuOptions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#topMenuOptions button {
+    all: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--themeColor);
+    border-radius: 15px;
+    color: var(--whiteColor);
+    padding: 10px 30px;
+}
+
+#main {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--backgroundColor);
+}
+
+#projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 12px;
+}
+
+#projectCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projectCard {
+    background-color: var(--whiteColor);
+    border-left: 5px var(--secondColor) solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.cardText {
+    font-size: 0.8rem;
+    color: var(--secondTextColor);
+}
+
+.cardMenu {
+    display: flex;
+    justify-content: end;
+}
+
+#announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 12px;
+}
+
+#announcementList,
+#trendingList {
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.announcement {
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+.announcementTitle {
+    font-size: small;
+}
+
+.announcementText {
+    font-size: x-small;
+    color: var(--secondTextColor);
+}
+
+#trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 12px;
+}
+
+.trendingAccount {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trendingAccount .profilePicture {
+    grid-row: 1 / 3;
+}
+
+.accountName {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.appName {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: var(--secondTextColor);
+}
